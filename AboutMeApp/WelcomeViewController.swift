@@ -9,7 +9,12 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    @IBOutlet var greetingLabel: UILabel!
+    
+    var greeting: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        greetingLabel.text = greeting
     }
 }
