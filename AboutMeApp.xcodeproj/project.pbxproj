@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E35DAB542A0410C10014DC05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DAB532A0410C10014DC05 /* AppDelegate.swift */; };
 		E35DAB562A0410C10014DC05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DAB552A0410C10014DC05 /* SceneDelegate.swift */; };
-		E35DAB582A0410C10014DC05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DAB572A0410C10014DC05 /* ViewController.swift */; };
+		E35DAB582A0410C10014DC05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35DAB572A0410C10014DC05 /* LoginViewController.swift */; };
 		E35DAB5B2A0410C10014DC05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35DAB592A0410C10014DC05 /* Main.storyboard */; };
 		E35DAB5D2A0410C30014DC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35DAB5C2A0410C30014DC05 /* Assets.xcassets */; };
 		E35DAB602A0410C30014DC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35DAB5E2A0410C30014DC05 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		E35DAB502A0410C10014DC05 /* AboutMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E35DAB532A0410C10014DC05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E35DAB552A0410C10014DC05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E35DAB572A0410C10014DC05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E35DAB572A0410C10014DC05 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E35DAB5A2A0410C10014DC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E35DAB5C2A0410C30014DC05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E35DAB5F2A0410C30014DC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 			children = (
 				E35DAB532A0410C10014DC05 /* AppDelegate.swift */,
 				E35DAB552A0410C10014DC05 /* SceneDelegate.swift */,
-				E35DAB572A0410C10014DC05 /* ViewController.swift */,
+				E35DAB572A0410C10014DC05 /* LoginViewController.swift */,
 				E35DAB592A0410C10014DC05 /* Main.storyboard */,
 				E35DAB5C2A0410C30014DC05 /* Assets.xcassets */,
 				E35DAB5E2A0410C30014DC05 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E35DAB582A0410C10014DC05 /* ViewController.swift in Sources */,
+				E35DAB582A0410C10014DC05 /* LoginViewController.swift in Sources */,
 				E35DAB542A0410C10014DC05 /* AppDelegate.swift in Sources */,
 				E35DAB562A0410C10014DC05 /* SceneDelegate.swift in Sources */,
 			);
