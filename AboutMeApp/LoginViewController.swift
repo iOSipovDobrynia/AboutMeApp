@@ -19,9 +19,16 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if userNameTF.text != userName || passwordTF.text != password {
-            showAlert(withTitle: "Incorrect login or passrod", andMessage: "Please, enter correct values")
+            showAlert(
+                withTitle: "Incorrect login or password",
+                andMessage: "Please, enter correct values"
+            )
             passwordTF.text = ""
             return
         }
@@ -47,7 +54,11 @@ class LoginViewController: UIViewController {
 // MARK: UIAlertController
 extension LoginViewController {
     private func showAlert(withTitle title: String, andMessage message: String) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
         present(alert, animated: true)
