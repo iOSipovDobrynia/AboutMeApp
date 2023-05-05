@@ -26,7 +26,6 @@ class LoginViewController: UIViewController {
                 andMessage: "Please, enter correct values"
             )
             passwordTF.text = ""
-            return
         }
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.greeting = "Hi, \(userName)"
