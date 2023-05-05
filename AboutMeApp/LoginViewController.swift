@@ -20,13 +20,6 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if userNameTF.text != userName || passwordTF.text != password {
-            showAlert(
-                withTitle: "Incorrect login or password",
-                andMessage: "Please, enter correct values"
-            )
-            passwordTF.text = ""
-        }
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.greeting = "Hi, \(userName)"
         
@@ -39,6 +32,16 @@ class LoginViewController: UIViewController {
     @IBAction func forgotPasswordButtonPressed() {
         showAlert(withTitle: "Hi", andMessage: "Your Password is \(password)")
     }
+    @IBAction func loginButtonPressed() {
+        if userNameTF.text != userName || passwordTF.text != password {
+            showAlert(
+                withTitle: "Incorrect login or password",
+                andMessage: "Please, enter correct values"
+            )
+            passwordTF.text = ""
+        }
+    }
+    
     @IBAction func unwind(for segue: UIStoryboardSegue) {
         guard let welcomeVC = segue.source as? WelcomeViewController else { return }
         userNameTF.text = ""
