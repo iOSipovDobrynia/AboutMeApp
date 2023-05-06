@@ -34,12 +34,15 @@ class LoginViewController: UIViewController {
         showAlert(withTitle: "Hi", andMessage: "Your Password is \(password)")
     }
     @IBAction func loginButtonPressed() {
-        if userNameTF.text != userName || passwordTF.text != password {
+        guard userNameTF.text == userName || passwordTF.text == password else {
             showAlert(
                 withTitle: "Incorrect login or password",
                 andMessage: "Please, enter correct values"
             )
+            return
         }
+        
+        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {
