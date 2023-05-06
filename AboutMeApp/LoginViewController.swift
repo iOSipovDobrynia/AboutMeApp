@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     private let password = "Osipov"
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
     
@@ -38,7 +39,6 @@ class LoginViewController: UIViewController {
                 withTitle: "Incorrect login or password",
                 andMessage: "Please, enter correct values"
             )
-            passwordTF.text = ""
         }
     }
     
@@ -56,7 +56,9 @@ extension LoginViewController {
             message: message,
             preferredStyle: .alert
         )
-        let okAction = UIAlertAction(title: "OK", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default) {_ in
+            self.passwordTF.text = ""
+        }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
