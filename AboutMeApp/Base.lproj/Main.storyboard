@@ -81,7 +81,7 @@
                     <connections>
                         <outlet property="passwordTF" destination="1Qk-nA-0zh" id="W3c-gb-Sq9"/>
                         <outlet property="userNameTF" destination="CxJ-Mx-E1z" id="ick-Ah-2P1"/>
-                        <segue destination="Pkw-43-3ey" kind="presentation" modalPresentationStyle="fullScreen" id="VKZ-Xd-U36"/>
+                        <segue destination="Pkw-43-3ey" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="VKZ-Xd-U36"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
