@@ -27,12 +27,12 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: IBActions
-    @IBAction func forgotNameButtonPressed() {
-        showAlert(withTitle: "Hi", andMessage: "Your User Name is \(userName)")
+    @IBAction func forgotButtonPressed(_ sender: UIButton) {
+        sender.tag == 0
+        ? showAlert(withTitle: "Hi", andMessage: "Your User Name is \(userName)")
+        : showAlert(withTitle: "Hi", andMessage: "Your Password is \(password)")
     }
-    @IBAction func forgotPasswordButtonPressed() {
-        showAlert(withTitle: "Hi", andMessage: "Your Password is \(password)")
-    }
+    
     @IBAction func loginButtonPressed() {
         guard userNameTF.text == userName || passwordTF.text == password else {
             showAlert(
