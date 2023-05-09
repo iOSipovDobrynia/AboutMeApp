@@ -12,6 +12,8 @@ class LoginViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
+    private let user = User.getUser()
+    
     private let userName = "Dobrynia"
     private let password = "Osipov"
     

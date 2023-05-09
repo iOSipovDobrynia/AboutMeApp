@@ -10,7 +10,7 @@ struct User {
     let password: String
     let person: Person
     
-    func getUser() -> User {
+    static func getUser() -> User {
         User(
             login: "Dobrynia",
             password: "Osipov",
@@ -19,9 +19,9 @@ struct User {
                 lastUpdate: "09.09.2023",
                 biography: "Hello World! My name is Dobrynia Osipov, and I'm a iOS Developer based in Moscow. I began my journey as a developer in January 2023 and I'm exploring various technologies and frameworks that pique my interest.",
                 interests: [
-                    Interes(image: "🪗", label: "Playing a masical instrument"),
+                    Interes(image: "🪗", label: "Playing a musical instrument"),
+                    Interes(image: "🍰", label: "Cooking desserts"),
                     Interes(image: "🎮", label: "Gaming"),
-                    Interes(image: "🤸‍♂️", label: "Sport"),
                 ],
                 education: [
                     Institution(
