@@ -30,9 +30,7 @@ class LoginViewController: UIViewController {
                 guard let aboutVC = navigationVC.topViewController as? AboutViewController else { return }
                 aboutVC.navigationItem.title = user.person.fullName
                 aboutVC.shortDescription = user.person.shortDescription
-                aboutVC.lastUpdate = "last update: \(user.person.lastUpdate)"
-                
-//                guard let infoTabBarVC =
+                aboutVC.lastUpdate = "last update: \(user.person.lastUpdate)"                
             }
         }
     }

@@ -31,7 +31,9 @@ class AboutViewController: UIViewController {
             if let bioVC = viewController as? BioViewController {
                 bioVC.biography = user.person.biography
             } else if let interesVC = viewController as? InterestsViewController {
-                
+                interesVC.interesOne = user.person.interests[0]
+                interesVC.interesTwo = user.person.interests[1]
+                interesVC.interesThree = user.person.interests[2]
             } else if let educationVC = viewController as? EducationViewController {
                 
             }
