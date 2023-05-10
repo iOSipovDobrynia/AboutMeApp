@@ -13,12 +13,6 @@ class LoginViewController: UIViewController {
     @IBOutlet var passwordTF: UITextField!
     
     private let user = User.getUser()
-
-    private let userName = user.login
-    private let password = user.password
-    
-//    private let userName = "Dobrynia"
-//    private let password = "Osipov"
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
@@ -31,7 +25,7 @@ class LoginViewController: UIViewController {
         
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.greeting = "Hi, \(userName)"
+                welcomeVC.greeting = "Hi, \(user.login)"
             } else { return }
         }
     }
@@ -39,12 +33,12 @@ class LoginViewController: UIViewController {
     // MARK: IBActions
     @IBAction func forgotButtonPressed(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(withTitle: "Hi", andMessage: "Your User Name is \(userName)")
-        : showAlert(withTitle: "Hi", andMessage: "Your Password is \(password)")
+        ? showAlert(withTitle: "Hi", andMessage: "Your User Name is \(user.login)")
+        : showAlert(withTitle: "Hi", andMessage: "Your Password is \(user.password)")
     }
     
     @IBAction func loginButtonPressed() {
-        guard userNameTF.text == userName || passwordTF.text == password else {
+        guard userNameTF.text == user.login && passwordTF.text == user.password else {
             showAlert(
                 withTitle: "Incorrect login or password",
                 andMessage: "Please, enter correct values"
