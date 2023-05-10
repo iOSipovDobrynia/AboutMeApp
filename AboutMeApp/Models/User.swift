@@ -15,8 +15,9 @@ struct User {
             login: "Dobrynia",
             password: "Osipov",
             person: Person(
+                fullName: "Dobrynia Osipov",
                 shortDescription: "iOS Developer",
-                lastUpdate: "09.09.2023",
+                lastUpdate: "10.09.2023",
                 biography: "Hello World! My name is Dobrynia Osipov, and I'm a iOS Developer based in Moscow. I began my journey as a developer in January 2023 and I'm exploring various technologies and frameworks that pique my interest.",
                 interests: [
                     Interes(image: "🪗", label: "Playing a musical instrument"),
@@ -55,6 +56,7 @@ struct User {
 }
 
 struct Person {
+    let fullName: String
     let shortDescription: String
     let lastUpdate: String
     let biography: String

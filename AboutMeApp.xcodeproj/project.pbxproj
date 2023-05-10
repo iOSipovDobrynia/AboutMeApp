@@ -15,6 +15,7 @@
 		E35DAB5D2A0410C30014DC05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E35DAB5C2A0410C30014DC05 /* Assets.xcassets */; };
 		E35DAB602A0410C30014DC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35DAB5E2A0410C30014DC05 /* LaunchScreen.storyboard */; };
 		E3C077F42A0AC46A00DD5881 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C077F32A0AC46A00DD5881 /* User.swift */; };
+		E3C077F62A0B78D500DD5881 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C077F52A0B78D500DD5881 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E35DAB5F2A0410C30014DC05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E35DAB612A0410C30014DC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C077F32A0AC46A00DD5881 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E3C077F52A0B78D500DD5881 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			children = (
 				E35DAB572A0410C10014DC05 /* LoginViewController.swift */,
 				E33003B72A0420B100A6023A /* WelcomeViewController.swift */,
+				E3C077F52A0B78D500DD5881 /* AboutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C077F62A0B78D500DD5881 /* AboutViewController.swift in Sources */,
 				E35DAB582A0410C10014DC05 /* LoginViewController.swift in Sources */,
 				E33003B82A0420B100A6023A /* WelcomeViewController.swift in Sources */,
 				E35DAB542A0410C10014DC05 /* AppDelegate.swift in Sources */,

@@ -134,13 +134,19 @@
         <!--Dobrynia Osipov-->
         <scene sceneID="dEO-DU-ALC">
             <objects>
-                <viewController id="Zrm-M4-ULb" sceneMemberID="viewController">
+                <viewController id="Zrm-M4-ULb" customClass="AboutViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IdE-AN-OVB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43O-6R-UQW">
-                                <rect key="frame" x="16" y="273.5" width="288" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43O-6R-UQW">
+                                <rect key="frame" x="16" y="266" width="288" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="last update:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-uI-V22">
+                                <rect key="frame" x="115" y="458" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -149,7 +155,9 @@
                         <viewLayoutGuide key="safeArea" id="OiP-IM-nm8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xvm-uI-V22" firstAttribute="centerX" secondItem="IdE-AN-OVB" secondAttribute="centerX" id="4JD-VA-fvr"/>
                             <constraint firstItem="43O-6R-UQW" firstAttribute="leading" secondItem="OiP-IM-nm8" secondAttribute="leading" constant="16" id="XJF-2E-6o9"/>
+                            <constraint firstItem="OiP-IM-nm8" firstAttribute="bottom" secondItem="xvm-uI-V22" secondAttribute="bottom" constant="40" id="kXn-T6-zE8"/>
                             <constraint firstItem="43O-6R-UQW" firstAttribute="centerY" secondItem="IdE-AN-OVB" secondAttribute="centerY" id="uje-Ua-PMj"/>
                             <constraint firstItem="OiP-IM-nm8" firstAttribute="trailing" secondItem="43O-6R-UQW" secondAttribute="trailing" constant="16" id="wU9-NY-hbM"/>
                         </constraints>
@@ -161,6 +169,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="lastUpdateLabel" destination="xvm-uI-V22" id="DXy-aE-6lA"/>
+                        <outlet property="shortDescriptionLabel" destination="43O-6R-UQW" id="huy-4n-2hn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hOs-9h-KSV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
