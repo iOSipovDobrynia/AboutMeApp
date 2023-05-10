@@ -18,7 +18,7 @@ struct User {
                 fullName: "Dobrynia Osipov",
                 shortDescription: "iOS Developer",
                 lastUpdate: "10.09.2023",
-                biography: "Hello World! My name is Dobrynia Osipov, and I'm a iOS Developer based in Moscow. I began my journey as a developer in January 2023 and I'm exploring various technologies and frameworks that pique my interest.",
+                biography: "Hello, World! My name is Dobrynia Osipov, and I'm a iOS Developer based in Moscow. I began my journey as a developer in January 2023 and I'm exploring various technologies and frameworks that pique my interest.",
                 interests: [
                     Interes(image: "🪗", label: "Playing a musical instrument"),
                     Interes(image: "🍰", label: "Cooking desserts"),

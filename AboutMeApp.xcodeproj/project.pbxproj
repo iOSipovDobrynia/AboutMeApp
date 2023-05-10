@@ -16,6 +16,9 @@
 		E35DAB602A0410C30014DC05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E35DAB5E2A0410C30014DC05 /* LaunchScreen.storyboard */; };
 		E3C077F42A0AC46A00DD5881 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C077F32A0AC46A00DD5881 /* User.swift */; };
 		E3C077F62A0B78D500DD5881 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C077F52A0B78D500DD5881 /* AboutViewController.swift */; };
+		E3C077F82A0B80BB00DD5881 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C077F72A0B80BB00DD5881 /* BioViewController.swift */; };
+		E3C077FA2A0B80E200DD5881 /* InterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C077F92A0B80E200DD5881 /* InterestsViewController.swift */; };
+		E3C077FC2A0B80F500DD5881 /* EducationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C077FB2A0B80F500DD5881 /* EducationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		E35DAB612A0410C30014DC05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3C077F32A0AC46A00DD5881 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E3C077F52A0B78D500DD5881 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		E3C077F72A0B80BB00DD5881 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		E3C077F92A0B80E200DD5881 /* InterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsViewController.swift; sourceTree = "<group>"; };
+		E3C077FB2A0B80F500DD5881 /* EducationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,9 @@
 				E35DAB572A0410C10014DC05 /* LoginViewController.swift */,
 				E33003B72A0420B100A6023A /* WelcomeViewController.swift */,
 				E3C077F52A0B78D500DD5881 /* AboutViewController.swift */,
+				E3C077F72A0B80BB00DD5881 /* BioViewController.swift */,
+				E3C077F92A0B80E200DD5881 /* InterestsViewController.swift */,
+				E3C077FB2A0B80F500DD5881 /* EducationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -179,6 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3C077FA2A0B80E200DD5881 /* InterestsViewController.swift in Sources */,
+				E3C077FC2A0B80F500DD5881 /* EducationViewController.swift in Sources */,
+				E3C077F82A0B80BB00DD5881 /* BioViewController.swift in Sources */,
 				E3C077F62A0B78D500DD5881 /* AboutViewController.swift in Sources */,
 				E35DAB582A0410C10014DC05 /* LoginViewController.swift in Sources */,
 				E33003B82A0420B100A6023A /* WelcomeViewController.swift in Sources */,
