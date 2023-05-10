@@ -35,7 +35,7 @@ class AboutViewController: UIViewController {
                 interesVC.interesTwo = user.person.interests[1]
                 interesVC.interesThree = user.person.interests[2]
             } else if let educationVC = viewController as? EducationViewController {
-                
+                educationVC.educations = user.person.education
             }
         }
     }
