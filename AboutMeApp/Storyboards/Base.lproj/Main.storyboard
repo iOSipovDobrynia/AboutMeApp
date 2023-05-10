@@ -181,15 +181,31 @@
         <!--Bio-->
         <scene sceneID="k8w-2U-cwV">
             <objects>
-                <viewController id="RgD-Og-Gvq" sceneMemberID="viewController">
+                <viewController id="RgD-Og-Gvq" customClass="BioViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CZa-ve-7Xu">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="biography" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayr-OA-RRb">
+                                <rect key="frame" x="16" y="274" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="deP-DK-wav"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ayr-OA-RRb" firstAttribute="leading" secondItem="deP-DK-wav" secondAttribute="leading" constant="16" id="9Lb-Iy-ttC"/>
+                            <constraint firstItem="ayr-OA-RRb" firstAttribute="centerY" secondItem="CZa-ve-7Xu" secondAttribute="centerY" id="ZE3-78-UFr"/>
+                            <constraint firstItem="deP-DK-wav" firstAttribute="trailing" secondItem="ayr-OA-RRb" secondAttribute="trailing" constant="16" id="bBD-6y-421"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bio" image="ellipsis.message" catalog="system" id="M5J-pp-465"/>
                     <navigationItem key="navigationItem" id="rg3-kl-uEM"/>
+                    <connections>
+                        <outlet property="biographyLabel" destination="ayr-OA-RRb" id="6yc-Wh-ck1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJq-ik-8RU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -198,7 +214,7 @@
         <!--Interests-->
         <scene sceneID="but-W8-fex">
             <objects>
-                <viewController id="KZ4-cQ-4Bj" sceneMemberID="viewController">
+                <viewController id="KZ4-cQ-4Bj" customClass="InterestsViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uDk-gQ-Dw1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +230,7 @@
         <!--Education-->
         <scene sceneID="vjk-v7-MuC">
             <objects>
-                <viewController id="1Lj-WC-YHI" sceneMemberID="viewController">
+                <viewController id="1Lj-WC-YHI" customClass="EducationViewController" customModule="AboutMeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="myV-4b-eCm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -252,7 +268,7 @@
                     <tabBarItem key="tabBarItem" title="Info" image="info.circle" catalog="system" id="Ng1-28-tRc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="07T-W4-3wu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
