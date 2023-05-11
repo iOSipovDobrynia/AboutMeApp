@@ -12,7 +12,7 @@ class AboutViewController: UIViewController {
     @IBOutlet var shortDescriptionLabel: UILabel!
     @IBOutlet var lastUpdateLabel: UILabel!
     
-    private let user = User.getUser()
+    var user: User!
     
     var shortDescription: String!
     var lastUpdate: String!

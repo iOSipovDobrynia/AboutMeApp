@@ -28,6 +28,7 @@ class LoginViewController: UIViewController {
                 welcomeVC.greeting = "Hi, \(user.login)"
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let aboutVC = navigationVC.topViewController as? AboutViewController else { return }
+                aboutVC.user = user
                 aboutVC.navigationItem.title = user.person.fullName
                 aboutVC.shortDescription = user.person.shortDescription
                 aboutVC.lastUpdate = "last update: \(user.person.lastUpdate)"                
