@@ -14,13 +14,11 @@ class AboutViewController: UIViewController {
     
     var user: User!
     
-    var shortDescription: String!
-    var lastUpdate: String!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        shortDescriptionLabel.text = shortDescription
-        lastUpdateLabel.text = lastUpdate
+        navigationItem.title = user.person.fullName
+        shortDescriptionLabel.text = user.person.shortDescription
+        lastUpdateLabel.text = "last update: \(user.person.lastUpdate)"
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

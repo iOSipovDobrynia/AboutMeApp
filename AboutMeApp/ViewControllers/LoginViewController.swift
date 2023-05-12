@@ -25,13 +25,10 @@ class LoginViewController: UIViewController {
         
         viewControllers.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.greeting = "Hi, \(user.login)"
+                welcomeVC.user = user
             } else if let navigationVC = viewController as? UINavigationController {
                 guard let aboutVC = navigationVC.topViewController as? AboutViewController else { return }
                 aboutVC.user = user
-                aboutVC.navigationItem.title = user.person.fullName
-                aboutVC.shortDescription = user.person.shortDescription
-                aboutVC.lastUpdate = "last update: \(user.person.lastUpdate)"                
             }
         }
     }
