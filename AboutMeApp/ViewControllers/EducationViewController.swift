@@ -8,7 +8,7 @@
 import UIKit
 
 class EducationViewController: UIViewController {
-
+    // MARK: IBOutlets
     @IBOutlet var typeOne: UILabel!
     @IBOutlet var typeTwo: UILabel!
     @IBOutlet var typeThree: UILabel!

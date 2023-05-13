@@ -8,7 +8,7 @@
 import UIKit
 
 class BioViewController: UIViewController {
-
+    // MARK: IBOutlets
     @IBOutlet var biographyLabel: UILabel!
     
     var biography: String!

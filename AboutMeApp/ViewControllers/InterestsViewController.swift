@@ -8,7 +8,7 @@
 import UIKit
 
 class InterestsViewController: UIViewController {
-
+    // MARK: IBOutlets
     @IBOutlet var imageInteresOne: UILabel!
     @IBOutlet var imageInteresTwo: UILabel!
     @IBOutlet var imageInteresThree: UILabel!

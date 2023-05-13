@@ -8,7 +8,7 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    // MARK: IBOutlets
     @IBOutlet var greetingLabel: UILabel!
     
     var user: User!

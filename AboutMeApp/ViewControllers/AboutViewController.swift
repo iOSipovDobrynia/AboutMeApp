@@ -8,7 +8,7 @@
 import UIKit
 
 class AboutViewController: UIViewController {
-
+    // MARK: IBOutlets
     @IBOutlet var shortDescriptionLabel: UILabel!
     @IBOutlet var lastUpdateLabel: UILabel!
     
